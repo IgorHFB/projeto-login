@@ -1,80 +1,104 @@
 @charset "UTF-8";
 
+/*
+Paleta de Cores
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+
+
 * {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     font-size: 1em;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-section {
-    background-color: white;
-    color: black;
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 250px;
+    background-color: white;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
-section > h2 {
+section#login div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/building.jpg) no-repeat left bottom;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario h2 {
     text-align: center;
+    padding: 0 10px 15px 0px;
     font-size: 1.5em;
-    padding: 20px 20px 15px 0;
 }
 
-section p {
+#formulario p {
     font-size: 0.8em;
 }
 
-form div {
-    margin-top: 7px;
+#formulario div {
+    margin: 10px 0;
 }
 
-form div.data {
-    background-color: #5F2C82;
-    width: 240px;
-    padding: 1px 2px;
-    border-radius: 10px;
+#formulario div.data {
+    background-color: #5f2c82;
+    padding: 5px 5px;
+    border-radius: 8px;
 }
 
-div.data input {
-    background-color: rgb(97, 201, 197);
-    padding: 8px 25px 8px 0;
-    border-radius: 10px;
-}
-
-div.logar input {
-    background-color: rgb(77, 173, 170);
+#formulario div.data span {
     color: white;
-    width: 250px;
+}
+
+#formulario div.data input {
+    width: 190px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #a9dddb;
+}
+
+#formulario input[type="submit"] {
+    width: 230px;
     padding: 10px;
-    text-align: center;
-    border-radius: 5px;
+}
+
+#formulario div#entrar input {
+    background-color: #49a09d;
+    color: white;
     border: none;
+    border-radius: 8px;
 }
 
-div.logar input:hover {
-    background-color: rgb(60, 133, 130);
-    cursor: pointer;
-}
-
-div.senha input {
+#formulario div#senha input {
+    margin: -5px 0 15px 0;
     background-color: white;
-    color: rgb(94, 94, 94);
-    width: 250px;
-    padding: 10px;
-    margin-bottom: 25px;
-    text-align: center;
-    border-radius: 5px;
-    border-color: rgba(77, 173, 170, 0.5);
-}
-
-div.senha input:hover {
-    background-color: rgb(108, 211, 207);
-    cursor: pointer;
-}
-
-span {
-    color: white;
+    color: rgb(83, 83, 83);
+    border-radius: 8px;
+    border-color: rgb(121, 209, 206);
 }
