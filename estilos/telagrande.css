@@ -6,7 +6,7 @@ body {
 
 section#login {
     width: 950px;
-    height: 370px;
+    height: 350px;
 }
 
 section#login > div#imagem {
@@ -21,10 +21,21 @@ section#login > div#formulario {
     width: 50%;
 }
 
-#formulario div.data input {
-    width: 92%;
+#formulario h2 {
+    font-size: 2em;
+}
+
+#formulario p {
+    font-size: 1em;
 }
 
 #formulario input[type="submit"] {
-    width: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+#formulario a.botao {
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
 }

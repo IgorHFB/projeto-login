@@ -19,27 +19,25 @@
             <div id="formulario">
                 <h2>Login</h2>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="#" method="post" autocomplete="on">
-                    <div class="data">
-                        <span class="material-symbols-outlined">
-                            vpn_key
-                        </span>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" required placeholder=" seu e-mail" autocomplete="email">
-                    </div>
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="data">
                         <span class="material-symbols-outlined">
                             person
                         </span>
-                        <label for="pass"></label>
-                        <input type="password" name="pass" id="pass" required placeholder=" sua senha" minlength="8" maxlength="20">
+                        <input type="email" name="email" id="email" required placeholder=" seu e-mail" autocomplete="email" maxlength="30">
+                        <label for="email"></label>
                     </div>
-                    <div id="entrar">
+                    <div class="data">
+                        <span class="material-symbols-outlined">
+                            vpn_key
+                        </span>
+                        <input type="password" name="pass" id="pass" required placeholder=" sua senha" minlength="8" maxlength="20">
+                        <label for="pass"></label>
+                    </div>
+                    <div id="login">
                         <input type="submit" value="Entrar">
                     </div>
-                    <div id="senha">
-                        <input type="submit" value="Esqueci a senha &#x1F582;">
-                    </div>
+                    <a href="#" class="botao">Esqueci a senha &#x2709;</a>
                 </form>
             </div>
         </section>
