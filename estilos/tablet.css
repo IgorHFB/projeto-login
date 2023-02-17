@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Tablets */
+
+body {
+    background-color: blue;
+}
+
+section {
+    width: 90vw;
+}
+
+section img {
+    width: 200px;
+    height: 230px;
+    float: left;
+}
+
+form div {
+    float: right;
+}
